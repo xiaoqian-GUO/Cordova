@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1.5, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
+		<link rel="stylesheet" type="text/css" href="css/pao.css">
+		<link rel="stylesheet" type="text/css" href="css/important.css">
+        <title>党建</title>
+    </head>
+<body>
+	
+<!-- Begin organization -->
+<div data-role="page" id="organization" >
+    <div data-role="header" data-theme="b" data-position="fixed" data-fullscreen="false">
+    	<h1 class="headerLeft">组织</h1>
+    </div>
+
+    <div data-role="content" data-position="inline" id="contentOfOrg">
+		<div class="ui-grid-d">
+			<div class='ui-block-a toolbarOfContent org' id="dangwei" style="border-bottom: 2px solid orange;"><a href="#organization" data-transition="none">党委</a></div>
+			<div class='ui-block-b toolbarOfContent org' id="xingzheng"><a href="#organization2" data-transition="none">行政</a></div>
+			<div class='ui-block-c toolbarOfContent org' id="jiwei"><a href="#organization3" data-transition="none">纪委</a></div>
+			<div class='ui-block-d toolbarOfContent org' id="gonghui"><a href="#organization4" data-transition="none">工会</a></div>
+			<div class='ui-block-e toolbarOfContent org' id="tuanwei"><a href="#organization5" data-transition="none">团委</a></div>
+		</div>
+		<div data-role="collapsible-set">
+			<div data-role="collapsible" data-collapsed="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" class="ui-nodisc-icon ui-alt-icon folderList">
+				<h1 class="ha">集团公司党委</h1>
+				<div data-role="collapsible" data-collapsed="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" class="ui-nodisc-icon ui-alt-icon">
+					<h1 class="ha">集团公司机关党委</h1>
+					<ul>
+						<li class="ulli"><a  data-transition="none" href="#detailInfo" class="ulli">综合部党支部</a></li>
+						<li class="ulli"><a  data-transition="none" href="#detailInfo" class="ulli">财务部党支部</a></li>
+					</ul>
+				</div>
+				<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+					<h1 class="ha">天丰公司党委</h1>
+					
+				</div>
+				<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+					<h1 class="ha">沈阳公司党委</h1>
+					<ul>
+						<li class="ulli"><a data-transition="none" href="#detailInfo" class="ulli">沈阳机关党支部</a></li>
+						<li class="ulli"><a data-transition="none" href="#detailInfo" class="ulli">沈阳项目党支部</a></li>
+					</ul>
+				</div>
+				<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+					<h1 class="ha">山东公司党委</h1>
+					<ul>
+						<li class="ulli"><a data-transition="none" href="#detailInfo" class="ulli">山东机关第一党支部</a></li>
+						<li class="ulli"><a data-transition="none" href="#detailInfo" class="ulli">山东烟台党支部</a></li>
+					</ul>
+				</div>
+			</div>
+			</div>
+    	</div>
+
+    <div data-role="footer" data-position="fixed" data-fullscreen="false" data-theme="d" data-id="pageFooter">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#organization" data-transition="none" data-icon="grid" class="ui-btn-active ui-state-persist" >组织</a></li>
+            <li><a href="#users" data-transition="none" data-icon="star" >人员</a></li>
+            <li><a href="#plans" data-transition="none" data-icon="bullets">计划<span class="uilicountFooter">2</span></a></li>
+            <li><a href="#message" data-transition="none" data-icon="comment" >消息</a></li>
+            <li><a href="#me" data-transition="none" data-icon="user">我</a></li>
+        </ul>
+    </div>
+    </div> 
+</div> 
+<!-- End organization -->
+<!-- Begin organization2 -->
+<div data-role="page" id="organization2" >
+    <div data-role="header" data-theme="b" data-position="inline">
+    	<h1 class="headerLeft">组织</h1>
+    </div>
+
+    <div data-role="content" data-position="inline">
+		<div class="ui-grid-d">
+			<div class='ui-block-a toolbarOfContent'><a href="#organization" data-transition="none">党委</a></div>
+			<div class='ui-block-b toolbarOfContent' style="border-bottom: 2px solid orange;"><a data-transition="none" href="#organization2">行政</a></div>
+			<div class='ui-block-c toolbarOfContent'><a href="#organization3" data-transition="none">纪委</a></div>
+			<div class='ui-block-d toolbarOfContent'><a href="#organization4" data-transition="none">工会</a></div>
+			<div class='ui-block-e toolbarOfContent'><a href="#organization5" data-transition="none">团委</a></div>
+		</div>
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-fullscreen="true" data-theme="d" data-id="pageFooter">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#organization" data-transition="none" data-icon="grid" class="ui-btn-active ui-state-persist" >组织</a></li>
+            <li><a href="#users" data-transition="none" data-icon="star" >人员</a></li>
+            <li><a href="#plans" data-transition="none" data-icon="bullets">计划<span class="uilicountFooter">2</span></a></li>
+            <li><a href="#message" data-transition="none" data-icon="comment" >消息</a></li>
+            <li><a href="#me" data-transition="none" data-icon="user">我</a></li>
+        </ul>
+    </div>
+    </div> 
+</div> 
+<!-- End organization2 -->
+<!-- Begin organization3 -->
+<div data-role="page" id="organization3" >
+    <div data-role="header" data-theme="b" data-position="inline">
+    	<h1 class="headerLeft">组织</h1>
+    </div>
+
+    <div data-role="content" data-position="inline">
+		<div class="ui-grid-d">
+			<div class='ui-block-a toolbarOfContent'><a href="#organization" data-transition="none">党委</a></div>
+			<div class='ui-block-b toolbarOfContent'><a href="#organization2" data-transition="none">行政</a></div>
+			<div class='ui-block-c toolbarOfContent' style="border-bottom: 2px solid orange;"><a data-transition="none" href="#organization3">纪委</a></div>
+			<div class='ui-block-d toolbarOfContent'><a href="#organization4" data-transition="none">工会</a></div>
+			<div class='ui-block-e toolbarOfContent'><a href="#organization5" data-transition="none">团委</a></div>
+		</div>
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-fullscreen="true" data-theme="d" data-id="pageFooter">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#organization" data-transition="none" data-icon="grid" class="ui-btn-active ui-state-persist" >组织</a></li>
+            <li><a href="#users" data-transition="none" data-icon="star" >人员</a></li>
+            <li><a href="#plans" data-transition="none" data-icon="bullets">计划<span class="uilicountFooter">2</span></a></li>
+            <li><a href="#message" data-transition="none" data-icon="comment" >消息</a></li>
+            <li><a href="#me" data-transition="none" data-icon="user">我</a></li>
+        </ul>
+    </div>
+    </div> 
+</div> 
+<!-- End organization3 -->
+<!-- Begin organization4 -->
+<div data-role="page" id="organization4" >
+    <div data-role="header" data-theme="b" data-position="inline">
+    	<h1 class="headerLeft">组织</h1>
+    </div>
+
+    <div data-role="content" data-position="inline">
+		<div class="ui-grid-d">
+			<div class='ui-block-a toolbarOfContent'><a href="#organization" data-transition="none">党委</a></div>
+			<div class='ui-block-b toolbarOfContent'><a href="#organization2" data-transition="none">行政</a></div>
+			<div class='ui-block-c toolbarOfContent'><a href="#organization3" data-transition="none">纪委</a></div>
+			<div class='ui-block-d toolbarOfContent' style="border-bottom: 2px solid orange;"><a data-transition="none" href="#organization4">工会</a></div>
+			<div class='ui-block-e toolbarOfContent'><a href="#organization5" data-transition="none">团委</a></div>
+		</div>
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-fullscreen="true" data-theme="d" data-id="pageFooter">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#organization" data-transition="none" data-icon="grid" class="ui-btn-active ui-state-persist" >组织</a></li>
+            <li><a href="#users" data-transition="none" data-icon="star" >人员</a></li>
+            <li><a href="#plans" data-transition="none" data-icon="bullets">计划<span class="uilicountFooter">2</span></a></li>
+            <li><a href="#message" data-transition="none" data-icon="comment" >消息</a></li>
+            <li><a href="#me" data-transition="none" data-icon="user">我</a></li>
+        </ul>
+    </div>
+    </div> 
+</div> 
+<!-- End organization4 -->
+<!-- Begin organization5 -->
+<div data-role="page" id="organization5" >
+    <div data-role="header" data-theme="b" data-position="inline">
+    	<h1 class="headerLeft">组织</h1>
+    </div>
+
+    <div data-role="content" data-position="inline">
+		<div class="ui-grid-d">
+			<div class='ui-block-a toolbarOfContent'><a href="#organization" data-transition="none">党委</a></div>
+			<div class='ui-block-b toolbarOfContent'><a href="#organization2" data-transition="none">行政</a></div>
+			<div class='ui-block-c toolbarOfContent'><a href="#organization3" data-transition="none">纪委</a></div>
+			<div class='ui-block-d toolbarOfContent'><a href="#organization4" data-transition="none">工会</a></div>
+			<div class='ui-block-e toolbarOfContent' style="border-bottom: 2px solid orange;"><a data-transition="none" href="#organization5">团委</a></div>
+		</div>
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-fullscreen="true" data-theme="d" data-id="pageFooter">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#organization" data-transition="none" data-icon="grid" class="ui-btn-active ui-state-persist" >组织</a></li>
+            <li><a href="#users" data-transition="none" data-icon="star" >人员</a></li>
+            <li><a href="#plans" data-transition="none" data-icon="bullets">计划<span class="uilicountFooter">2</span></a></li>
+            <li><a href="#message" data-transition="none" data-icon="comment" >消息</a></li>
+            <li><a href="#me" data-transition="none" data-icon="user">我</a></li>
+        </ul>
+    </div>
+    </div> 
+</div> 
+<!-- End organization5 -->
+
+
+<!-- Begin users -->
+<div data-role="page" id="users" >
+    <div data-role="header" data-theme="b" data-position="inline">
+    <h1 class="headerLeft">组织</h1>
+    <div data-role="navbar" >
+    </div>
+    </div>
+
+    <div data-role="content">
+    	<div class="ui-grid-d">
+			<div class='ui-block-a toolbarOfContent' style="border-bottom: 2px solid orange;"><a data-transition="none" href="#dangwei">党委</a></div>
+			<div class='ui-block-b toolbarOfContent'><a href="#xingzheng" data-transition="none">行政</a></div>
+			<div class='ui-block-c toolbarOfContent'><a href="#jiwei" data-transition="none">纪委</a></div>
+			<div class='ui-block-d toolbarOfContent'><a href="#gonghui" data-transition="none">工会</a></div>
+			<div class='ui-block-e toolbarOfContent'><a href="#tuanwei" data-transition="none">团委</a></div>
+		</div>
+		<p>这是人员界面</p>
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-fullscreen="true" data-theme="d" data-id="pageFooter">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#organization" data-transition="none" data-icon="grid">组织</a></li>
+            <li><a href="#users" data-transition="none" data-icon="star" class="ui-btn-active ui-state-persist" >人员</a></li>
+            <li><a href="#plans" data-transition="none" data-icon="bullets">计划<span class="uilicountFooter">2</span></a></li>
+            <li><a href="#message" data-transition="none" data-icon="comment" >消息</a></li>
+            <li><a href="#me" data-transition="none" data-icon="user">我</a></li>
+            
+        </ul>
+    </div>
+    </div> 
+</div> 
+<!-- End users -->
+
+<!-- Begin plans -->
+<div data-role="page" id="plans" >
+    <div data-role="header" data-theme="b" data-position="inline">
+    <h1 class="headerLeft">组织</h1>
+    <div data-role="navbar" >
+    </div>
+    </div>
+
+    <div data-role="content">
+    	<div class="ui-grid-d">
+			<div class='ui-block-a toolbarOfContent' style="border-bottom: 2px solid orange;"><a data-transition="none" href="#dangwei">党委</a></div>
+			<div class='ui-block-b toolbarOfContent'><a href="#xingzheng" data-transition="none">行政</a></div>
+			<div class='ui-block-c toolbarOfContent'><a href="#jiwei" data-transition="none">纪委</a></div>
+			<div class='ui-block-d toolbarOfContent'><a href="#gonghui" data-transition="none">工会</a></div>
+			<div class='ui-block-e toolbarOfContent'><a href="#tuanwei" data-transition="none">团委</a></div>
+		</div>
+		 <p>这是计划界面</p>
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-fullscreen="true" data-theme="d" data-id="pageFooter">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#organization" data-transition="none" data-icon="grid">组织</a></li>
+            <li><a href="#users" data-transition="none" data-icon="star">人员</a></li>
+            <li><a href="#plans" data-transition="none" data-icon="bullets" class="ui-btn-active ui-state-persist" >计划</a></li>
+            <li><a href="#message" data-transition="none" data-icon="comment" >消息</a></li>
+            <li><a href="#me" data-transition="none" data-icon="user">我</a></li>
+           
+        </ul>
+    </div>
+    </div> 
+</div> 
+<!-- End plans -->
+
+<!-- Begin message -->
+<div data-role="page" id="message" >
+    <div data-role="header" data-theme="b" data-position="inline">
+    <h1 class="headerLeft">组织</h1>
+    <div data-role="navbar" >
+    </div>
+    </div>
+
+    <div data-role="content">
+    	<div class="ui-grid-d">
+			<div class='ui-block-a toolbarOfContent' style="border-bottom: 2px solid orange;"><a data-transition="none" href="#dangwei">党委</a></div>
+			<div class='ui-block-b toolbarOfContent'><a href="#xingzheng" data-transition="none">行政</a></div>
+			<div class='ui-block-c toolbarOfContent'><a href="#jiwei" data-transition="none">纪委</a></div>
+			<div class='ui-block-d toolbarOfContent'><a href="#gonghui" data-transition="none">工会</a></div>
+			<div class='ui-block-e toolbarOfContent'><a href="#tuanwei" data-transition="none">团委</a></div>
+		</div>
+		<p>这是消息界面</p>
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-fullscreen="true" data-theme="d" data-id="pageFooter">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#organization" data-transition="none" data-icon="grid">组织</a></li>
+            <li><a href="#users" data-transition="none" data-icon="star">人员</a></li>
+            <li><a href="#plans" data-transition="none" data-icon="bullets">计划<span class="uilicountFooter">2</span></a></li>
+            <li><a href="#message" data-transition="none" data-icon="comment" class="ui-btn-active ui-state-persist" >消息</a></li>
+            <li><a href="#me" data-transition="none" data-icon="user">我</a></li>
+            
+        </ul>
+    </div>
+    </div> 
+</div> 
+<!-- End message -->
+
+<!-- Begin me -->
+<div data-role="page" id="me" >
+    <div data-role="header" data-theme="b" data-position="inline">
+    <h1 class="headerLeft">组织</h1>
+    <div data-role="navbar" >
+    </div>
+    </div>
+
+    <div data-role="content">
+    	<div class="ui-grid-d">
+			<div class='ui-block-a toolbarOfContent' style="border-bottom: 2px solid orange;"><a data-transition="none" href="#dangwei">党委</a></div>
+			<div class='ui-block-b toolbarOfContent'><a href="#xingzheng" data-transition="none">行政</a></div>
+			<div class='ui-block-c toolbarOfContent'><a href="#jiwei" data-transition="none">纪委</a></div>
+			<div class='ui-block-d toolbarOfContent'><a href="#gonghui" data-transition="none">工会</a></div>
+			<div class='ui-block-e toolbarOfContent'><a href="#tuanwei" data-transition="none">团委</a></div>
+		</div>
+		<p>这是我的界面</p>
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-fullscreen="true" data-theme="d" data-id="pageFooter">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#organization" data-transition="none" data-icon="grid">组织</a></li>
+            <li><a href="#users" data-transition="none" data-icon="star">人员</a></li>
+            <li><a href="#plans" data-transition="none" data-icon="bullets">计划<span class="uilicountFooter">2</span></a></li>
+            <li><a href="#message" data-transition="none" data-icon="comment" >消息</a></li>
+            <li><a href="#me" data-transition="none" data-icon="user" class="ui-btn-active ui-state-persist" >我</a></li>
+            
+        </ul>
+    </div>
+    </div> 
+</div>
+<!-- End me -->
+
+
+
+<!-- Begin info -->
+<div data-role="page" id="detailInfo">
+    <div data-role="header" data-theme="b" class="headOfDetail">
+    <a href="#" data-role="button" data-transition="none" data-inline="true" data-rel="back" data-icon="arrow-l" class="infoBack">&nbsp;&nbsp;&nbsp;<span class="uilicount">1</span><span class="dtaInfo"> 详细信息</span></a>
+    <h1></h1>
+    </div>
+	
+    <div data-role="content">
+    	
+		<ul data-role="listview">
+			<li href="#"><p id="people">综合部党支部</p></li>
+			<li><img src="img/people.PNG"><p id="people">书记：郑勇</p><p id="people">副书记：王子光、朱洁</p><p id="people">委员：张三、李四</p></li>
+			<li><img src="img/intro.PNG"><label id="people">简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</label></li>
+		</ul>
+    </div>
+
+    <div data-role="footer" data-position="fixed"  data-theme="d" data-id="pageFooter">
+    
+    </div>
+
+</div>
+<!--- End info-->
+
+
+        <!--<div class="app">
+            <h1>Apache Cordova</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div>
+        </div>
+		-->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+		<script type="text/javascript" src="js/swipe.js"></script>
+        
+    </body>
+</html>

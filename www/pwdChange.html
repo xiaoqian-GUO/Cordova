@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1.5, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
+		<link rel="stylesheet" type="text/css" href="css/pao.css">
+        <title>重置密码</title>
+    </head>
+<body>
+<!-- Begin info -->
+<div data-role="page" id="detailInfo">
+    <div data-role="header" data-theme="b" class="headOfDetail">
+    <a href="#" data-role="button" data-inline="true" data-rel="back" data-icon="arrow-l" class="infoBack"><span class="dtaInfo"> 重置密码</span></a>
+    <h1></h1>
+    </div>
+	<div data-role="navbar">
+		
+        <p>请重置密码</p>
+        <hr style="opacity: 0.2;">
+    </div>
+    <div data-role="content">
+    	
+    </div>
+
+    <div data-role="footer" data-position="fixed"  data-theme="d" data-id="pageFooter">
+    
+    </div>
+
+</div> 
+<!--- End setting-->
+
+	<!-- Begin PageSingle -->
+<div data-role="page" id="pageSingle" >
+    <div data-role="header" data-theme="d" data-position="fixed">
+    <h1>学生管理</h1>
+    <div data-role="navbar" >
+        <ul>
+            <li><a href="#" data-transition="fade"  data-theme="c" class="ui-btn-active ui-state-persist" >大学生</a></li>
+            <li><a href="#pageUnSingle" data-transition="fade"  data-theme="c" >研究生</a></li>
+        </ul>
+    </div>
+    </div>
+
+    <div data-role="content">
+        <ul data-role="listview"  id="singleList" data-filter="true" data-filter-placeholder="请输入姓名或者年龄">
+   <!-- 动态 显示单身列表 -->    
+   <li><a href="#" onclick=""><image src="img/girl2.jpg" /><p style='font-size:18px;'>姓名：GXQ</p><p>年龄：23</p></a></li>
+   <li><a href="#" onclick=""><image src="img/boy1.jpg" /><p style='font-size:18px;'>姓名：abc</p><p>年龄：18</p></a></li>
+   <li><a href="#" onclick=""><image src="img/boy2.jpg" /><p style='font-size:18px;'>姓名：lh</p><p>年龄：**</p></a></li>
+   <li><a href="#" onclick=""><image src="img/girl1.jpg" /><p style='font-size:18px;'>姓名：aa</p><p>年龄：**</p></a></li>
+   <li><a href="#" onclick=""><image src="img/01.jpg" /><p style='font-size:18px;'>姓名：bb</p><p>年龄：**</p></a></li>
+   <li><a href="#" onclick=""><image src="img/02.jpg" /><p style='font-size:18px;'>姓名：cc</p><p>年龄：**</p></a></li>
+   <li><a href="#" onclick=""><image src="img/03.jpg" /><p style='font-size:18px;'>姓名：dd</p><p>年龄：**</p></a></li>
+   <li><a href="#" onclick=""><image src="img/04.jpg" /><p style='font-size:18px;'>姓名：ee</p><p>年龄：**</p></a></li>
+   <li><a href="#" onclick=""><image src="img/05.jpg" /><p style='font-size:18px;'>姓名：ff</p><p>年龄：**</p></a></li>
+  </ul>
+    </div>
+
+    <div data-role="footer" data-position="fixed"  data-theme="d" data-id="pageFooter">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#" data-transition="slide" data-icon="grid" class="ui-btn-active ui-state-persist" >学生管理</a></li>
+            <li><a href="#pageSystem" data-transition="slide" data-icon="star" >系统消息</a></li>
+            <li><a href="#pageSetting" data-transition="slide" data-icon="gear">系统设置</a></li>
+        </ul>
+    </div>
+    </div> 
+</div> 
+<!-- End info -->
+	
+	
+	
+	<!-- Begin PageSingle -->
+<div data-role="page" id="pageSingle" >
+    <div data-role="header" data-theme="b" data-position="fixed">
+    <h1>学生管理</h1>
+    <div data-role="navbar" >
+        <ul>
+            <li><a href="#" data-transition="fade"  data-theme="c" class="ui-btn-active ui-state-persist" >大学生</a></li>
+            <li><a href="#pageUnSingle" data-transition="fade"  data-theme="c" >研究生</a></li>
+        </ul>
+    </div>
+    </div>
+
+    <div data-role="content">
+        <ul data-role="listview"  id="singleList" data-filter="true" data-filter-placeholder="请输入姓名或者年龄">
+   <!-- 动态 显示单身列表 -->    
+   <li><a href="#" onclick=""><image src="img/girl2.jpg" /><p style='font-size:18px;'>姓名：GXQ</p><p>年龄：23</p></a></li>
+   <li><a href="#" onclick=""><image src="img/boy1.jpg" /><p style='font-size:18px;'>姓名：abc</p><p>年龄：18</p></a></li>
+   <li><a href="#" onclick=""><image src="img/boy2.jpg" /><p style='font-size:18px;'>姓名：lh</p><p>年龄：**</p></a></li>
+   <li><a href="#" onclick=""><image src="img/girl1.jpg" /><p style='font-size:18px;'>姓名：aa</p><p>年龄：**</p></a></li>
+   <li><a href="#" onclick=""><image src="img/01.jpg" /><p style='font-size:18px;'>姓名：bb</p><p>年龄：**</p></a></li>
+   <li><a href="#" onclick=""><image src="img/02.jpg" /><p style='font-size:18px;'>姓名：cc</p><p>年龄：**</p></a></li>
+   <li><a href="#" onclick=""><image src="img/03.jpg" /><p style='font-size:18px;'>姓名：dd</p><p>年龄：**</p></a></li>
+   <li><a href="#" onclick=""><image src="img/04.jpg" /><p style='font-size:18px;'>姓名：ee</p><p>年龄：**</p></a></li>
+   <li><a href="#" onclick=""><image src="img/05.jpg" /><p style='font-size:18px;'>姓名：ff</p><p>年龄：**</p></a></li>
+  </ul>
+    </div>
+
+    <div data-role="footer" data-position="fixed"  data-theme="d" data-id="pageFooter">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#" data-transition="slide" data-icon="grid" class="ui-btn-active ui-state-persist" >学生管理</a></li>
+            <li><a href="#pageSystem" data-transition="slide" data-icon="star" >系统消息</a></li>
+            <li><a href="#pageSetting" data-transition="slide" data-icon="gear">系统设置</a></li>
+        </ul>
+    </div>
+    </div> 
+</div> 
+<!-- End PageSingle -->
+
+<!-- Begin PageUnSingle -->
+<div data-role="page" id="pageUnSingle">
+    <div data-role="header"  data-theme="b" >
+    <h1>学生管理</h1>
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#pageSingle" data-transition="fade" data-theme="c" >大学生</a></li>
+            <li><a href="#" data-transition="fade" class="ui-btn-active ui-state-persist"  data-theme="c" >研究生</a></li>
+        </ul>
+    </div>
+        
+    </div>
+
+    <div data-role="content">
+        <ul  id="unsingleList" data-role="listview" data-filter="true" data-filter-placeholder="请输入姓名或者年龄">
+            <!-- 动态 显示非单身列表 -->
+			   <li><a href="#" onclick=""><image src="img/girl2.jpg" /><p style='font-size:18px;'>姓名：GXQ</p><p>年龄：23</p></a></li>
+			   <li><a href="#" onclick=""><image src="img/boy1.jpg" /><p style='font-size:18px;'>姓名：abc</p><p>年龄：18</p></a></li>
+			   <li><a href="#" onclick=""><image src="img/boy2.jpg" /><p style='font-size:18px;'>姓名：lh</p><p>年龄：18</p></a></li>
+			   <li><a href="#" onclick=""><image src="img/girl1.jpg" /><p style='font-size:18px;'>姓名：aa</p><p>年龄：18</p></a></li>
+			   
+        </ul>
+
+    </div>
+
+    <div data-role="footer" data-position="fixed"  data-theme="b" data-id="pageFooter">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#" data-transition="slide" data-icon="grid" class="ui-btn-active ui-state-persist">学生管理</a></li>
+            <li><a href="#pageSystem" data-transition="slide" data-icon="star">系统消息</a></li>
+            <li><a href="#pageSetting" data-transition="slide" data-icon="gear">系统设置</a></li>
+        </ul>
+    </div>
+    </div>
+
+</div> 
+<!--- End PageUnSingle-->
+<!-- Begin setting -->
+<div data-role="page" id="pageSetting">
+    <div data-role="header"  data-theme="b" >
+    <h1>学生管理</h1>
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#pageSingle" data-transition="fade" class="ui-btn-active ui-state-persist" data-theme="c" >大学生</a></li>
+            <li><a href="#" data-transition="fade" data-theme="c" >研究生</a></li>
+        </ul>
+    </div>
+        
+    </div>
+
+    <div data-role="content">
+        <button>系统设置</button>
+
+    </div>
+
+    <div data-role="footer" data-position="fixed"  data-theme="b" data-id="pageFooter">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#pageSingle" data-transition="slide" data-icon="grid">学生管理</a></li>
+            <li><a href="#pageSystem" data-transition="slide" data-icon="star">系统消息</a></li>
+            <li><a href="#pageSetting" data-transition="slide" data-icon="gear" class="ui-btn-active ui-state-persist">系统设置</a></li>
+        </ul>
+    </div>
+    </div>
+
+</div> 
+<!--- End setting-->
+
+
+
+        <!--<div class="app">
+            <h1>Apache Cordova</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div>
+        </div>
+		-->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+        
+    </body>
+</html>
